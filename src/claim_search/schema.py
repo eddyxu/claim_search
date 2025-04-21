@@ -11,3 +11,9 @@ class Claim(LanceModel):
 class Email(LanceModel):
     claim_number: str
     text_body: str
+
+
+class Attachment(LanceModel):
+    claim_number: str
+    file_type: str
+    file_uri: str
