@@ -12,3 +12,6 @@ build-backend = "hatchling.build"
 
 [project.scripts]
 claims = "claim_search.main:main"
+
+[tool.uv]
+dev-dependencies = ["ruff", "pytest"]
