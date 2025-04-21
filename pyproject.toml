@@ -4,8 +4,11 @@ version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
-dependencies = ["lancedb", "pydantic>2"]
+dependencies = ["lancedb", "pydantic>2", "polars>1"]
 
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
+
+[project.scripts]
+claims = "claim_search.main:main"
